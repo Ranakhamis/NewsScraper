@@ -15,11 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path , include
+#from . import views
+
+
 
 urlpatterns = [
     #path('' , include('main aw DjangoApp1.urls')),	
     path('admin/', admin.site.urls),
     #path('tinymce/', include('tinymce.urls')),
+
+    #path('',include("scrapingArticles.urls")),
+    #path('scrapingArticles/',include('django.contrib.auth.urls'))
+
 ]
 
 
