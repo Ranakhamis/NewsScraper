@@ -1,0 +1,85 @@
+<!--Enable search the article by keywords , Title, URL -->
+<!--1-user should enter keywords-->
+<!--2-Display article's Title and Text-->
+<!--3-See More or redirect for the url and summary and category-->
+<!---->
+
+<!--search article by (header in jumbotron)-->
+<!--A dropdown for users to choose a method to search for articles-->
+<!--A text box to write title, url, keywords --> <!--search button-->
+<!--cards to display the title,text and get the picture of the article as a bonus-->
+<!--see more button using the collapse that shows url,summary,category-->
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid" style= color:white;>
+  <div class="container" style= background-color:#89cff0>
+    <h1 class="display-4">Are You Searching for a certain Article ?</h1>
+
+<!----------------->
+ <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Choose The way you prefer
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">URL</a>
+    <a class="dropdown-item" href="#">keywords</a>
+    <a class="dropdown-item" href="#">Title</a>
+  </div>
+  <!--------------->
+<br>
+<br>
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <div class="input-group-append">
+    <span class="input-group-text">Search</span>
+  </div>
+</div>
+  </div>
+</div>
+<br> <br>
+
+<div class="card border-dark mb-3" id="Article Title" style="max-width:100%; margin: 5px;">
+   <div class="row no-gutters">
+   <div class="col-md-4">
+        <img src="dummy.jpg" class="card-img" alt="dummy" style="width: min-width; height: min-content;">
+        </div>
+        <div class="col-md-8">
+
+        <div class="card-body">
+             <div expanded="true" aria-labelledby="heading1" data-parent="#accordion">
+
+                 <div id="accordion">
+                    <div class="card">
+                         <div class="card-header" id="heading1">
+                             <h4 class="card-title" style="font-weight:bold; color:blue"><a href="#" class="card-link">Article Title</a></h4>
+                                 <p class="card-text"> text </p>
+                                        <p class="collapse" id="collapse1"> text</p>
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">See More</button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+
+
