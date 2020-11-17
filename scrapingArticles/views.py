@@ -7,11 +7,8 @@ from .models import scrapingArticles
 # Create your views here.
 
 
-def homepage(request):
-    return render(request= request, 
-                  template_name= "main/home.html" , #main?walla scrapinArticles 3ala esm l folder
-                   context= {"sactapedData": scrapingArticles.object.all})
-
+def home(request):
+    return render(request, 'scrapingArticles/login.html')
 
 
 class ArticleAdmin(admin.ModelAdmin):
